@@ -13,7 +13,7 @@ yarn init:env
 >
 > - Application port: PORT=8080
 > - Application env: NODE_ENV='development'
-> - Database Url (optional): DATABASE_URL='mongodb://localhost:27017/k8s-boilerplate?authSource=admin'
+> - Database Url (optional): DATABASE_URL='mongodb://localhost:27017/test-db'
 > - Set to true to use Mocks : IS_MOCK=true
 
 ## III - Start server
