@@ -35,3 +35,10 @@ To add some more **global** middleware, you'll have to update the file `./src/in
 | Type     | Uri          | Description         | Data source  | Available           |
 | ------   | ------------ | ------------------- | ------------ | ------------------- |
 | [POST]   | /login       | Post login request  | n/a          | [![API][api-yes]]() |
+
+## Companies
+
+| Type     | Uri          | Description         | Data source  | Available           |
+| ------   | ------------ | ------------------- | ------------ | ------------------- |
+| [GET]    | /companies   | Get all companies   | n/a          | [![API][api-yes]]() |
+| [POST]   | /companies   | Record new company  | n/a          | [![API][api-yes]]() |

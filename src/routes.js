@@ -1,5 +1,6 @@
 import { Router } from "express";
 import login from "./components/Login/routes.js";
+import companies from "./components/Companies/routes.js";
 
 export default (app) => {
     const router = Router({ mergeParams: true });
@@ -13,6 +14,7 @@ export default (app) => {
     });
 
     router.use("/login", login);
+    router.use("/companies", companies);
 
     app.use("/", router);
 
