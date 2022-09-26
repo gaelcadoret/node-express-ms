@@ -64,17 +64,17 @@ const logUser = (req) => new Promise(async (resolve, reject) => {
 const sendToken = (res) => (token) => sendSuccessResponse(res, { token });
 const sendError = (res) => (response) => sendErrorResponse(res, response.statusCode, response.error);
 
-app.get("/login", async (req, res) => {
+app.post("/login", async (req, res) => {
     logUser(req)
         .then(sendToken(res))
         .catch(sendError(res))
 });
 
-app.get("/", (req, res) => {
-    console.log("test")
+app.get("/healthz", (req, res) => {
+
     res.send({
         success: true,
-        data: "hello world!",
+        data: "micro-services is still alive.",
         timestamp: Date.now()
     });
 });

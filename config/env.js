@@ -2,7 +2,7 @@ import * as dotenv from 'dotenv' // see https://github.com/motdotla/dotenv#how-d
 dotenv.config();
 
 const NODE_ENV = process.env.NODE_ENV;
-const PORT = process.env.APPLICATION_PORT || 8080;
+const PORT = process.env.PORT || 8080;
 const DATABASE_URL = process.env.DATABASE_URL;
 const IS_MOCK = process.env.IS_MOCK === "true";
 
