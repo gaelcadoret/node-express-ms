@@ -21,6 +21,9 @@ yarn init:env
 yarn start
 ```
 
+## Middleware
+To add some more **global** middleware, you'll have to update the file `./src/index.js`
+
 ## Healthz
 
 | Type  | Uri      | Description       | Available           |

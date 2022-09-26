@@ -16,6 +16,10 @@ export default () => {
     app.use(express.json());
     app.use(express.urlencoded({ extended: false }));
 
+    /**
+     * Add other middleware here
+     */
+
     router(app);
     return app;
 };
