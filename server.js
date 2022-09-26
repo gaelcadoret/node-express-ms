@@ -2,9 +2,9 @@ import express from "express";
 import { expressjwt } from 'express-jwt';
 import jwt from 'jsonwebtoken';
 import cors from "cors";
-import { User } from './db.js';
+import { PORT } from "./config/env.js";
 
-const PORT = 3000;
+import { User } from './db.js';
 
 const app = express();
 
