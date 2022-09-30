@@ -11,7 +11,7 @@ export default () => {
         algorithms: ['HS256'],
         credentialsRequired: false,
         secret: JWT_SECRET,
-    }));
+    }, ));
 
     app.use(express.json());
     app.use(express.urlencoded({ extended: false }));
