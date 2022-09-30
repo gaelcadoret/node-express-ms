@@ -28,17 +28,18 @@ To add some more **global** middleware, you'll have to update the file `./src/in
 
 | Type  | Uri      | Description       | Available           |
 | ----- | -------- | ----------------- | ------------------- |
-| [GET] | /healthz | Check the healthy | [![API][api-yes]]() |
+| [GET] | /healthz | Check the healthy | [x]                 |
 
 ## Login
 
 | Type     | Uri          | Description         | Data source  | Available           |
 | ------   | ------------ | ------------------- | ------------ | ------------------- |
-| [POST]   | /login       | Post login request  | n/a          | [![API][api-yes]]() |
+| [POST]   | /auth/signin | Post signin request | n/a          | [x]                 |
+| [POST]   | /auth/signup | Post signup request | n/a          | [ ]                 |
 
 ## Companies
 
 | Type     | Uri          | Description         | Data source  | Available           |
 | ------   | ------------ | ------------------- | ------------ | ------------------- |
-| [GET]    | /companies   | Get all companies   | n/a          | [![API][api-yes]]() |
-| [POST]   | /companies   | Record new company  | n/a          | [![API][api-yes]]() |
+| [GET]    | /companies   | Get all companies   | n/a          | [x]                 |
+| [POST]   | /companies   | Record new company  | n/a          | [x]                |
