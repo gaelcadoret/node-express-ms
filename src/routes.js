@@ -1,6 +1,7 @@
 import { Router } from "express";
 import auth from "./components/Auth/routes.js";
 import companies from "./components/Companies/routes.js";
+// import algolia from "./components/Algolia/routes.js";
 
 export default (app) => {
     const router = Router({ mergeParams: true });
@@ -15,6 +16,7 @@ export default (app) => {
 
     router.use("/auth", auth);
     router.use("/companies", companies);
+    // router.use("/algolia", algolia);
 
     app.use("/", router);
 
